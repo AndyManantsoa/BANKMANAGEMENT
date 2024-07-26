@@ -21,9 +21,16 @@ public class Management{
 
     public void add()
     {
+<<<<<<< HEAD
         Account newAccount = new Account();
         newAccount.addAccount();
         accounts[i++] = newAccount;
+=======
+        temp.addAccount();
+        accounts[i] = temp;
+        i++;
+
+>>>>>>> 6258ee072a7d34778cf92b3278a9b86149a5325a
     }
 
     public void display(String number)
@@ -38,7 +45,11 @@ public class Management{
     }
 
     public void display(){
+<<<<<<< HEAD
         if(i==0){
+=======
+        if(i<=0){
+>>>>>>> 6258ee072a7d34778cf92b3278a9b86149a5325a
             System.out.println("There is no account registered");
         }
         for(int x =0 ; x<i;x++){
@@ -57,6 +68,7 @@ public class Management{
         }
     }
 
+<<<<<<< HEAD
 
     public void delete()
     {
@@ -82,6 +94,8 @@ public class Management{
 
 
 
+=======
+>>>>>>> 6258ee072a7d34778cf92b3278a9b86149a5325a
     public void transaction(String number){
         Account temp = validation(number);
         if(temp!=null){

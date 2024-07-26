@@ -6,7 +6,11 @@ public class Account{
     static int ifsc = 2024;
     String name, email, type, accountNumber;
     static String branchName ="BARODA";
+<<<<<<< HEAD
     static int i = 0;
+=======
+    static int count = 0;
+>>>>>>> 6258ee072a7d34778cf92b3278a9b86149a5325a
 
     public void addAccount()
     {
@@ -36,7 +40,11 @@ public class Account{
             type = "Saving";
         }
 
+<<<<<<< HEAD
         id = ++i;
+=======
+        id = ++count;
+>>>>>>> 6258ee072a7d34778cf92b3278a9b86149a5325a
         balance = 0;
         accountNumber = "0MCB"+(int)(24000000+id);
 
@@ -48,8 +56,12 @@ public class Account{
 
     public void displayDetails()
     {
+<<<<<<< HEAD
         System.out.println("Details for account number = "+this.accountNumber);
         System.out.println("Account id : "+this.id);
+=======
+        System.out.println("Details for account number = "+this.accountNumber+"\n");
+>>>>>>> 6258ee072a7d34778cf92b3278a9b86149a5325a
         System.out.println("Name : "+this.name);
         System.out.println("Email : "+this.email);
         System.out.println("Phone : "+this.phone);
