@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class Management{
     Scanner scan = new Scanner(System.in);
     Account [] accounts = new Account[100];
@@ -21,16 +20,9 @@ public class Management{
 
     public void add()
     {
-<<<<<<< HEAD
         Account newAccount = new Account();
         newAccount.addAccount();
         accounts[i++] = newAccount;
-=======
-        temp.addAccount();
-        accounts[i] = temp;
-        i++;
-
->>>>>>> 6258ee072a7d34778cf92b3278a9b86149a5325a
     }
 
     public void display(String number)
@@ -45,17 +37,17 @@ public class Management{
     }
 
     public void display(){
-<<<<<<< HEAD
         if(i==0){
-=======
-        if(i<=0){
->>>>>>> 6258ee072a7d34778cf92b3278a9b86149a5325a
             System.out.println("There is no account registered");
         }
-        for(int x =0 ; x<i;x++){
-            System.out.println("Account "+(x+1)+": ");
-            accounts[x].displayDetails();
-            System.out.println();
+        else{
+            System.out.println("Number of accounts registered= "+this.i+"\n");
+
+            for(int x =0 ; x<i;x++){
+                System.out.println("Account "+(x+1)+": ");
+                accounts[x].displayDetails();
+                System.out.println();
+            }
         }
     }
 
@@ -68,7 +60,6 @@ public class Management{
         }
     }
 
-<<<<<<< HEAD
 
     public void delete()
     {
@@ -94,15 +85,13 @@ public class Management{
 
 
 
-=======
->>>>>>> 6258ee072a7d34778cf92b3278a9b86149a5325a
     public void transaction(String number){
         Account temp = validation(number);
         if(temp!=null){
             temp.displayDetails();
             System.out.println(
                     """
-                    Enter the type of transaction:\
+                    Enter the type of transaction:
                     \t1- Credit
                     \t2- Debit
                     \t3- View balance
