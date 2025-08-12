@@ -80,7 +80,7 @@ public class Main {
                     """
                     DO YOU WANT TO PERFORM ANY OTHER OPERATION::
                         \tPress one (1) for YES
-                        \tPress two (2) for NO
+                        \tPress two (2) ary any number for NO
                     """
         );
 

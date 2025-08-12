@@ -71,7 +71,7 @@ public class Management{
             {
                 temp=1;
             }
-            accounts[a]=accounts[a+temp];;
+            accounts[a]=accounts[a+temp];
         }
         if(temp==0) {
             System.out.println("Account not found");
